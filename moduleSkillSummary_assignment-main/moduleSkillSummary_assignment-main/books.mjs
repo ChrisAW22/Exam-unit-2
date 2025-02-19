@@ -62,3 +62,10 @@ function desc_books_last_name(books) {
 }
 
 console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
