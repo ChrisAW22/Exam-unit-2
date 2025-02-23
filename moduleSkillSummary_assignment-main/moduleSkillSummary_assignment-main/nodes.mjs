@@ -1,3 +1,4 @@
+import test from "./tests.mjs";
 import { nodes } from "./data.mjs";
 function max(a, b) {
     return a > b ? a : b;
@@ -29,3 +30,5 @@ const values = allResults(nodes, null, result);
 console.log("Sum = " + values.sum);
 console.log("Deepest level = " + values.deep);
 console.log("Nodes = " + values.nodes);
+
+const testNodes = test ("Nodes");

@@ -1,3 +1,5 @@
+import test from "./tests.mjs";
+
 function books(books, result, author) {
     for (const book of books) {
         const part = books.title.slice(0, 2)
@@ -69,3 +71,5 @@ console.log()
 console.log()
 console.log()
 console.log()
+
+const testBooks = test ("Books");

@@ -1,3 +1,4 @@
+import test from "./tests.mjs";
 import { arrays } from "./data.mjs";
 
 function flatArray (array, result = []) {
@@ -12,3 +13,5 @@ function flatArray (array, result = []) {
 }
 
 console.log(flatArray(arrays, []));
+
+const testArray = test ("Array");

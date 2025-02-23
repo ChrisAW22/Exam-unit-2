@@ -1,3 +1,5 @@
+import test from "./tests.mjs";
+
 function square(x) {
     return x * x;
 }
@@ -28,3 +30,5 @@ console.log(root(16));
 console.log(cube(3));
 console.log(area(6));
 console.log(greeting("Charlie"));
+
+const testFunction = test ("Function");
