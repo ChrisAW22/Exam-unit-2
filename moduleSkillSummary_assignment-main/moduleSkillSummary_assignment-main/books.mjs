@@ -4,19 +4,16 @@ import {books} from "./data.mjs";
 function booksFunction(books, result, author) {
     if (!Array.isArray(books)) {
         console.log("Error: books is not an array.");
-        return result;  // Return the result as is
+        return result; 
     }
 
     for (const book of books) {
-        // Check if the book object has a 'title' property to prevent errors
         if (book && book.title) {
             const part = book.title.slice(0, 3);
             if (part === "The") {
                 result.the.push(book);
             }
         }
-
-        // Check if the book has an 'author' and 'publication_year' before accessing them
         if (book && book.author) {
             if (book.author.match("t")) {
                 result.t_authors.push(book);
