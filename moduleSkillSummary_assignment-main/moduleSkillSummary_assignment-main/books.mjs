@@ -108,7 +108,6 @@ function desc_books_last_name(books) {
     return books.sort((a, b) => b.author.split(" ").slice(-1)[0].localeCompare(a.author.split(" ").slice(-1)[0]));
 }
 
-// Example call to booksFunction with a sample books array
 book_result = booksFunction(books, book_result, "Terry Pratchett");
 console.log("Books starting with 'The': ", book_result.the);
 console.log("Authors with 't' in their name: ", book_result.t_authors);
